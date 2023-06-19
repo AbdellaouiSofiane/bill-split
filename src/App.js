@@ -55,7 +55,11 @@ function App() {
         <AddFriend onAddFriend={handleAddFriend} />
       </div>
       <div className="sidebar">
-        <SplitBillForm friend={selectedFriend} onSplitBill={handleSplitBill} />
+        <SplitBillForm
+          friend={selectedFriend}
+          onSplitBill={handleSplitBill}
+          key={selectedFriend?.id}
+        />
       </div>
     </div>
   );
